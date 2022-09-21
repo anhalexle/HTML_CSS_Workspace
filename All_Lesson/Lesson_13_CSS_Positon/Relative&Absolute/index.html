@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>F8 - shop</title>
+        <meta charset="utf-8">
+        <style>
+            html,body{
+                margin: 0;
+            }
+            /* relative là lấy chính mình làm gốc tọa độ và không phụ thuộc vào những thằng khác */
+            /* h1{
+                /* position: relative; */
+                /* top: 100px;
+                left: 100px;
+            } */ 
+            .box{
+                width: 100%;
+                height: 120px;
+                background-color: #333;
+                position: relative;
+            }
+            /* khi kích thước quá nhỏ ta không thể chỉnh cả 4 góc mà chỉ ưu tiên top and right  */
+            /* Làm mờ mờ */
+            
+            .box-child{
+                
+                width: 50px;
+                height: 50px;
+                background-color: rgba(255, 2555, 255, 0.5);
+                position: absolute;
+                /* nó sẽ bao phủ nguyên lớp nào gần nhất có position là relative */
+                /* top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0; */
+                top: 0;
+                right: 0 ;
+            }
+            .box2{
+                width: 120px;
+                height: 80px;
+                background-color: violet;
+                position:absolute;
+                bottom: 0;
+                right: 0;
+
+            }
+            /* absolute là kiểu position phụ thuộc vào kích thước của thẻ cha gần nhất vd thẻ cha mà có xài position là bám theo luôn */
+            li:nth-of-type(2){
+                color:violet;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"> Today I'll feel so good
+            <div class="box2">
+                <div>
+                    <div class="box-child"></div>
+                </div>
+            </div>
+        </div>
+        <h1>Position</h1>
+        <ul>
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+            <li>Sticky</li>
+        </ul>
+    </body>
+</html>

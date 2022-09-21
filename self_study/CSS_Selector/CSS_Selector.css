@@ -1,0 +1,63 @@
+/* Chọn tất cả */
+*{
+    font-style: italic;
+}
+/* Chọn theo class */
+.class-1{
+    color:aqua;
+}
+/* Chọn theo tên của 2 class CSS viết liền */
+.class-2.class-3{
+    color:grey;
+}
+/* Chọn theo tên của class này là con của class kìa CSS có khoảng cách */
+.class-4 .class-5{
+    color: pink;
+}
+/* chọn theo tên id */
+#eighth-heading{
+    color:blue;
+}
+/* Chọn theo p */
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+/* Chọn theo div */
+div{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p.class-6{
+    color: red;
+    font-weight: 900;
+}
+/* Lựa chọn toàn bộ thẻ li là con của class list */
+/* khi ta tạo 1 ul có attribute class tên list rồi ta tọa các thẻ li bên trong
+sẽ dùng class cách ra rồi tới các thẻ  */
+.list li {
+    color: deepskyblue;
+}
+
+/* Lựa chọn toàn bộ thẻ li là con trực tiếp của thẻ có class list */
+.list > li {
+    color: fuchsia;
+}
+/* difference between element1 element2 and element1 > element2 là 
+element2 là con trực tiếp của element1 còn element1 element2 thể hiện khi element2 ta tiếp tục khai báo thêm 1 thẻ y chang element 2 thì mối quan hệ giữa element 1 element 2 
+sẽ được thể hiện*/
+/* <div>
+    <span>...</span> dùng được div> span
+    <span>
+        <span>...</span> dùng được div span
+    </span>
+ */
+div span{
+    background-color: blue;
+}
+div > span{
+    background-color: red;
+}
+div+p{
+    background-color: green;
+}
+

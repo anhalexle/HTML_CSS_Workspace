@@ -1,0 +1,15 @@
+/* Global variables */
+:root{
+    --text-color:violet;
+}
+/* Local */
+h1{
+    --my-color: green;
+    color: var(--my-color);
+}
+h2{
+    color: var(--my-color);
+}
+h3{
+    color: var(--text-color);
+}

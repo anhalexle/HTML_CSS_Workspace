@@ -1,0 +1,18 @@
+/* *{
+    color:red;
+}
+/* Universal độ ưu tiên thấp nhất nên khi bị gọi lại là sẽ đổi */
+/* li{
+    color:black;
+} */ 
+html{
+    color: violet;
+}
+/* !important là ưu tiên hơn cả style css inline */
+li{
+    color: red !important;
+}
+
+li{
+    color: green;
+}

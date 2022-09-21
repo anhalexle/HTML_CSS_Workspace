@@ -1,0 +1,65 @@
+.box{
+    background-color: orange;
+    /* --height:100px; */
+    /* height: var(--height); */
+    height: 100px;
+    /* thể hiện việc kế thừa thuộc tính text-aligned nên ảnh hưởng tới h3 */
+    /* cũng kế thừa được */
+    /* cách 1: căn giữa theo dạng text align */
+    /* text-align: center;
+    line-height: 100px; */
+    /* cách kiểm tra coi kế thừa đc ko vd: line-height css w3school kiếm inherited=yes là kế thừa được */
+    /* cách 2 dùng theo kiểu flex box display */
+    /* display: flex;
+    align-items: center; */
+    /* dùng center cho justify content sẽ gộp 3 thằng lại và xếp giữa */
+    /* justify-content: center; */
+    /* có 2 cách là dùng margin: auto dưới h3 */
+    /* cách 2 là dùng space-around thì giống margin auto */
+    /* justify-content: space-around; */
+    /* hoặc dùng space-between thì nó sẽ đẩy 2 thằng xa nhất ra ngoài cùng rồi căn giữa thằng còn lại */
+    /* justify-content: space-between; */
+    /* cách thứ 3 dùng position */
+    /* position: relative; */
+    /* không dùng position cũng được luôn */
+    /* text-align: center; */
+    display: flex;
+
+    
+}
+h3{
+    /* canh chữ nằm giữa theo chiều dọc, chiều dọc bằng chiều dọc thằng chứa nó là tự động canh giữa */
+    /* tự động căn giữa nhờ margin */
+   /* margin: auto; */
+   /* position: absolute; */
+   /* kích thước phụ thuộc vào thẻ cha cụ thể là thẻ box nhưng lùi xuống 50% lại bị l */
+   /* top: 50%;
+   left:  50%;
+   /* dịch theo X theo Y  */
+   /* transform: translateY(-50%) translateX(-50%); */ 
+   /* line-height: var(--height);   */
+   position:  relative;
+   margin: auto;
+   /* top: 50%;
+   left:  50%;
+   transform: translateY(-50%) translateX(-50%); */
+  
+}
+h3::after{
+    position: absolute;
+    content: "";
+    border-left: 3px; 
+    height: 10px;
+    top: 50%;
+    left: -10px;
+    border-left: 3px solid #333;
+    padding-left: 8px;
+    transform: translateY(-50%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+   
+}

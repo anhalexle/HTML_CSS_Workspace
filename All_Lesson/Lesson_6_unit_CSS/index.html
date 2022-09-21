@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>F8 - shop</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            /* đơn vị % phụ thuộc vào kích thước của thẻ cha */
+            /* đơn vị rem phụ thuộc vào thẻ html */
+            /* đơn vị em phụ thuộc vào kích thước gần nó nhất có sử dụng thuộc tính như nó */
+            /* đơn vị vw và vh phụ thuộc vào kích thước của trình duyệt */
+            /* html=100% là font-size=16px */
+            html{
+                font-size: 150%;
+            }
+            .box{
+                /* 1 nửa kích thước của thẻ body và thẻ body kế thừa kích thước của trình duyệt */
+                width: 50vw;
+                height: 50vh;
+                background-color: red;
+            }
+            /* rem kế thừa kích thước của thẻ html */
+            /* ví dụ cho thẻ html font-size: 40 px thì 1 rem =40px */
+            /* em kế thừa kích thước của thẻ có định nghĩa kích thước font-size trước đó */
+            /* Ví dụ h1 được chứa trong thẻ div mà thẻ div có font-size=100px nên 1 em =100px */
+            h1{
+                font-size: 1rem;
+            }
+            #test-font-size{
+                font-size:50px;
+            }
+            /* vw - width , vh - height */
+            /* viewport, kích thước hiện tại của chữ phụ thuộc vào chiều dài - vh hoặc chiều rộng - vw */
+            /* vd 1vw là 1% chiều ngang của trình duyệt
+                    1 vh là 1% chiều dọc của trình duyệt */
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <h1 id="test-font-size">Test font size</h1>
+        <div style="font-size: 100px;">
+            <h1>CSS units?</h1>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>F8 - shop</title>
+        <meta charset="utf-8">
+        <style>
+            .box{
+                width: 100%;
+                height: 120px;
+                background: rgb(190, 124, 157);
+            }
+            /* trỏ chuột tới đối tượng sẽ đổi màu */
+            /* .box:hover{
+                background-color:#333;
+            }
+            h1:hover{
+                color:red;
+            } */
+            /* nhấn giữ chuột thì đối tượng đổi màu */
+            .box:active{
+                background-color: #333;
+            }
+            h1:active{
+                color:red;
+            }
+            /* first child và last child */
+            li:first-child{
+                color:red;
+            }
+            li:last-child{
+                color:blue;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <h1>CSS-pseudo-classes</h1>
+        <ul>
+            <!-- lớp giả -->
+            <li>:root</li>
+            <li>:hover</li>
+            <li>:active</li>
+            <li>:first-child</li>
+            <li>:last-child</li>
+        </ul>
+        <!-- Cú pháp của pseudo classes là 
+            selector:pseudo-class {
+            property: value;
+        } -->
+    </body>
+</html>

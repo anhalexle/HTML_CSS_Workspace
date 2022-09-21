@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>F8 - shop</title>
+        <meta charset="utf-8">
+        <style>
+            html, body{
+                margin: 0;
+            }
+            /* rgb khác rgba ở chỗ có thông số a dao động từ 0 đén 1 quyết định độ trong suốt của bức ảnh */
+            /* .header{
+                width: 100%;
+                height:100vh;
+                /* background-image: url(https://icon-library.com/images/star-png-icon/star-png-icon-0.jpg)
+                ,url(https://haycafe.vn/wp-content/uploads/2022/01/Hinh-nen-Da-Lat-4K.jpg);
+                background-size: 100%;
+                /* Tự động hiểu chiều ngang bức ảnh là 100 px còn chiều dài là auto */
+                /* background-repeat: no-repeat;
+                mặc định là repeat có repeat x là theo chiều dọc còn repeat y là theo chiều ngang */ 
+                /* tham sô đầu là góc quay rồi tới 2 cái màu */
+                /* 0 độ thì ko cần ghi lớn góc lớn hơn 0 độ thì ghi thêm deg vd 90deg */
+                /* background-image: url(https://media.istockphoto.com/vectors/check-fashion-seamless-pattern-vector-repeat-background-vector-id1170300915);
+                background-size: 100px;
+
+            } */ 
+            .box{
+                width: calc(80%+20% );
+                height: 120px;
+                background: rgb(156, 59, 59);
+            }
+            /* attribute của CSS */
+            .box::after{
+                content: attr(data-title);
+            }
+            a::after{
+                content: " (" attr(href)")";
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="header"></div> -->
+        <div class="box" data-title="Đây là box không phải màu hồng"></div>
+        <a href="https://fullstack.edu.vn">Học lập trình</a>
+        <h1>CSS functions</h1>
+        <ul>
+            <li>var()</li>
+            <li>linear-gradient()</li>
+            <li>rgba()</li>
+            <li>rgb()</li>
+            <li>calc()</li>
+            <li>attr()</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+/* ID thì dùng dấu #  */
+#first-heading{
+    color: red;
+}
+/* class thì dùng dấu . */
+.second-heading{
+    color: green;
+    font-size: 20 px;
+}

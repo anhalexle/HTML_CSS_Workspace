@@ -1,0 +1,26 @@
+1. Analyst the project -> OK
+1.1 Header
+1.2 Slider
+1.3 Container
+1.4 Content
+    1.3.1 About
+    1.3.2 Tour 
+    1.3.3 Contact
+    1.3.4 Image
+1.5 Footer
+
+2. Establish project base (xây móng)
+
+3. Build different part based on the establishment
+
+Những thành phần thường gặp trên giao diện website:
+1. Header (đầu trang)
+2. Navigation (Điều hướng trang, vài nút vài cái link :D)
+3. Breadcrumb (chỉ xem mình đang ở đâu trong trang web)
+4. Sidebar (thanh đặt bên trái hoặc bên phải màn hình)
+5. Slider (thanh trượt hiện ảnh hoặc video,...)
+6. Content (nội dung)
+7. Footer (chân trang)
+8. Banner (ảnh động)
+
+ONE PAGE

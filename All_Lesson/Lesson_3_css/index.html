@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--Phần đầu--> 
+        <title>F8 - Shop</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">  
+      
+
+    </head>
+    <!-- Comment bấm Ctrl+/ -->
+    <!-- Phần thân -->
+    <body>
+        <!-- Lựa chọn qua ID -->
+        <h2 id="primary-heading">Tiêu đề 1</h2>
+        <h2 id="secondary-heading">Tiêu đề 2</h2>
+        ...
+        <style>
+            #primary-heading {
+            color: red;
+             }
+        </style>
+        <div>
+            <!-- ID không được phép trùng nhưng class thì được -->
+            <h1 id="first-heading">CSS Selectors?</h1>
+            <h1 class="second-heading">CSS Selectors?</h1> 
+            <h1 class="second-heading">CSS Selectors?</h1>  
+            <h2 class="second-heading">ID & Class</h2>
+        </div>
+        <!-- CSS cho các thẻ con -->
+        <p class="children-1">Đoạn văn 1 (không parent)</p>
+        <p class="children-2">Đoạn văn 2 (không parent)</p>
+
+        <div class="parent">
+            <p>Đoạn văn 1 (parent 1)</p>
+            <p class="children-1">Đoạn văn 1 (con của .parent)</p>
+            <p class="children-2">Đoạn văn 2 (con của .parent)</p>
+        </div>
+
+        <style>
+           */
+            /* Chọn tất cả thẻ "p" là con của thẻ có class "parent" */
+            .parent p {
+                color: green;
+            }
+
+            /* Chọn tất cả thẻ có class "children-1" là con của thẻ có class "parent" */
+            .parent .children-1 {
+                color: red;
+            }
+            .parent .children-2{
+                color:cyan;
+            }
+             /* nếu ta khai báo trước thì sẽ không bị ảnh hưởng */
+             .children-1{
+                color:pink;
+            }
+            .children-2{
+                color: navy;
+            }
+            /* have both name children-3 và children-5 */
+        </style>
+        <!-- Lựa chọn qua 1 class -->
+        <p class="paragraph">Đoạn văn 1</p>
+        <p class="paragraph">Đoạn văn 2</p>
+        <p class="other-paragraph">Đoạn văn 3</p>
+        <style>
+            .paragraph {
+                color: green;
+            }
+            .other-paragraph{
+                color:black;
+            }
+        </style>
+        <!-- Lựa chọn qua nhiều class -->
+        <p class="p1-normal">Đoạn văn 1</p>
+        <p class="p1-normal">Đoạn văn 2</p>
+        <p class="p1-normal p2-red">Đoạn văn 3</p>
+        <p class="p1-normal p2-red">Đoạn văn 4</p>
+        <style>
+            .p1-normal {
+                color: green;
+            }
+        
+            /* Lưu ý, các tên class viết liền nhau, không có khoảng trắng */
+            .p1-normal.p2-red {
+                color: red;
+            }
+        </style>
+        
+
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>F8 - shop</title>
+        <meta charset="utf-8">
+        <style>
+            .box{
+                width: 100%;
+                height: 120px;
+                background: rgb(190, 124, 157);
+            }
+            /* cần cho hàm content khi sử dụng thuộc tính giả */
+            /* .box::before{
+                content: "Xin chào";
+                color: red;
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+            }
+            .box::after{
+                content: "";
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+            } */
+            /* Chữ cái đầu tiên */
+            /* h1::first-letter{
+                font-size: 50px;
+            } */
+            /* Dòng đầu tiên */
+            /* h1::first-line{
+                font-size: 50px;
+                color: red;
+            } */
+            /* Bôi đen 1 đối tượng thì đổi hiệu ứng */
+            ::selection{
+                background-color: violet;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+           
+        </div>
+        <h1>CSS pseudo-elements <br/>
+            Dòng thứ 2</h1>
+        <ul>
+            <li>::before</li>
+            <li>::after</li>
+            <li>::first-letter</li>
+            <li>::first-line</li>
+            <li>::selection</li>
+        </ul>
+    </body>
+</html>

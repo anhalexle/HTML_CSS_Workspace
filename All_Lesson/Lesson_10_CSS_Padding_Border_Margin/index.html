@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>F8 - shop</title>
+        <meta charset="utf-8">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .box{
+                width: 60px;
+                height: 60px;
+                color: fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* làm cho các đối tượng nằm theo chiều ngang */
+                /* float: left; */
+            }
+            .box1{
+                background-color: #333;
+                /* margin-left: 20px; */
+            }
+            .box2{
+                background-color: orange;
+                /* margin-left: 50px; */
+            }
+            /* padding là lớp đệm bên ngoài content margin là lớp VIỀN bao cả content lẫn padding */
+            /* margin không làm cho đối tượng dày lên mà chỉ là khoảng cách đúng nghĩa */
+            .box3{
+                background-color: firebrick;
+                /* short hand i chang border và padding cũng theo chiều kim đồng hồ nếu viết 4 tham số */
+                margin: 10px 20px 30px 40px ;
+                /* margin-top: 20px; */
+                /* padding-top: 10px;
+                padding-right: 10px;
+                padding-left: 10px;
+                padding-bottom: 10px; */
+                /* viết tắt */
+                /* viết 1 lần padding là mặc định 4 hướng */
+                /* viết 2 lần thì là trên dưới xong tới trái phải */
+                /* 3 tham số thì tham số đầu là top, tham số 2 là trái phải, tham số thứ 3 là bottom */
+                /* 4 tham số thì trên phải dưới trái */
+                /* padding: 10px; */
+                /* border-top-width: 10px;
+                border-right-width: 0px;
+                border-bottom-width: 0px;
+                border-left-width: 0px;
+                /* border style mặc định là 3px nếu chỉ khai báo 1 phía  */
+                /* border-style: solid;
+                border-color: #333; */ 
+                /* short hand */
+                /* FULL */
+                /* Bỏ màu thì không có màu */
+                /* bỏ kích thước thì mặc định 3 px */
+                /* border: 10px solid ;
+                border-color: #333; */
+
+
+            }
+
+        </style> 
+    </head>
+    <body>
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </body>
+</html>

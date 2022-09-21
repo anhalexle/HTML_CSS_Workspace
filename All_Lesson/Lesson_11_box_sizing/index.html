@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>F8 - shop</title>
+        <meta charset="utf-8">
+        <style>
+            html,body{
+                margin:0;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
+                color:#fff;
+                background-color: darkorchid;
+                padding: 16px;
+                border: 2px solid #333;
+                /* content-box là giá trị content bằng width height 
+                unset là hủy hết
+                border-box là giá trị tổng của width vs height trừ cho padding vs border ra content  */
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">Đây là nội dung bài viết</div>
+    </body>
+</html>
